@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80BEFD6A2AA4094500B2DF89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BEFD692AA4094500B2DF89 /* AppDelegate.swift */; };
+		80BEFD6C2AA4094500B2DF89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BEFD6B2AA4094500B2DF89 /* SceneDelegate.swift */; };
+		80BEFD712AA4094500B2DF89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80BEFD6F2AA4094500B2DF89 /* Main.storyboard */; };
+		80BEFD732AA4094700B2DF89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80BEFD722AA4094700B2DF89 /* Assets.xcassets */; };
+		80BEFD762AA4094700B2DF89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80BEFD742AA4094700B2DF89 /* LaunchScreen.storyboard */; };
+		80BEFD7E2AA40A4D00B2DF89 /* TopmenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BEFD7D2AA40A4D00B2DF89 /* TopmenuViewController.swift */; };
+		80BEFD852AA40BCD00B2DF89 /* TopmenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BEFD832AA40BCD00B2DF89 /* TopmenuCollectionViewCell.swift */; };
+		80BEFD862AA40BCD00B2DF89 /* TopmenuCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80BEFD842AA40BCD00B2DF89 /* TopmenuCollectionViewCell.xib */; };
+		80BEFD882AA40C7C00B2DF89 /* MainroomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BEFD872AA40C7C00B2DF89 /* MainroomViewController.swift */; };
+		80BEFD8A2AA40CBC00B2DF89 /* NewroomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BEFD892AA40CBC00B2DF89 /* NewroomViewController.swift */; };
+		80BEFD8D2AA40CEF00B2DF89 /* NewroomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BEFD8B2AA40CEF00B2DF89 /* NewroomCollectionViewCell.swift */; };
+		80BEFD8E2AA40CEF00B2DF89 /* NewroomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80BEFD8C2AA40CEF00B2DF89 /* NewroomCollectionViewCell.xib */; };
+		80BEFD902AA40D6B00B2DF89 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BEFD8F2AA40D6B00B2DF89 /* ResultViewController.swift */; };
+		80BEFD922AA40D8D00B2DF89 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BEFD912AA40D8D00B2DF89 /* SettingViewController.swift */; };
+		80BEFD942AA40DB500B2DF89 /* UpdateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BEFD932AA40DB500B2DF89 /* UpdateAccountViewController.swift */; };
+		80BEFD962AA40DE300B2DF89 /* UserDataStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BEFD952AA40DE300B2DF89 /* UserDataStoreViewController.swift */; };
+		80BEFD982AA40E0A00B2DF89 /* GooglePlacesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BEFD972AA40E0A00B2DF89 /* GooglePlacesManager.swift */; };
+		80BEFD9A2AA40E2700B2DF89 /* Roomdata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BEFD992AA40E2700B2DF89 /* Roomdata.swift */; };
+		80BEFD9C2AA40E4000B2DF89 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BEFD9B2AA40E4000B2DF89 /* UserManager.swift */; };
+		80BEFDA02AA40E9A00B2DF89 /* CustomInfoWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BEFD9F2AA40E9A00B2DF89 /* CustomInfoWindow.swift */; };
+		80BEFDA42AA40F8800B2DF89 /* CustomInfoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80BEFDA32AA40F8800B2DF89 /* CustomInfoWindow.xib */; };
+		80BEFE262AA4113600B2DF89 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80BEFE252AA4113600B2DF89 /* Login.storyboard */; };
+		80BEFE282AA4115500B2DF89 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BEFE272AA4115500B2DF89 /* LoginViewController.swift */; };
+		80BEFE2A2AA4117500B2DF89 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BEFE292AA4117500B2DF89 /* SignUpViewController.swift */; };
+		80CD493C2AA41E7600C14626 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 80CD493B2AA41E7600C14626 /* FirebaseAuth */; };
+		80CD493E2AA41E7600C14626 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 80CD493D2AA41E7600C14626 /* FirebaseAuthCombine-Community */; };
+		80CD49402AA41E7600C14626 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 80CD493F2AA41E7600C14626 /* FirebaseFirestore */; };
+		80CD49422AA41E7600C14626 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 80CD49412AA41E7600C14626 /* FirebaseFirestoreCombine-Community */; };
+		80CD49442AA41E7600C14626 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 80CD49432AA41E7600C14626 /* FirebaseFirestoreSwift */; };
+		80CD49462AA41E7600C14626 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 80CD49452AA41E7600C14626 /* FirebaseStorage */; };
+		80CD49482AA41E7600C14626 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 80CD49472AA41E7600C14626 /* FirebaseStorageCombine-Community */; };
+		80CD494B2AA423E800C14626 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 80CD494A2AA423E800C14626 /* GoogleSignIn */; };
+		80CD494D2AA423E800C14626 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 80CD494C2AA423E800C14626 /* GoogleSignInSwift */; };
+		80CD494F2AA4290B00C14626 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80CD494E2AA4290A00C14626 /* GoogleService-Info.plist */; };
+		EEC4E6ED4109859EDA789502 /* Pods_PinPal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B55F295DA0C6A3988F89297 /* Pods_PinPal.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0B55F295DA0C6A3988F89297 /* Pods_PinPal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinPal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80BEFD662AA4094500B2DF89 /* PinPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80BEFD692AA4094500B2DF89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		80BEFD6B2AA4094500B2DF89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		80BEFD702AA4094500B2DF89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80BEFD722AA4094700B2DF89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80BEFD752AA4094700B2DF89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		80BEFD772AA4094700B2DF89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80BEFD7D2AA40A4D00B2DF89 /* TopmenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopmenuViewController.swift; sourceTree = "<group>"; };
+		80BEFD832AA40BCD00B2DF89 /* TopmenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopmenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		80BEFD842AA40BCD00B2DF89 /* TopmenuCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopmenuCollectionViewCell.xib; sourceTree = "<group>"; };
+		80BEFD872AA40C7C00B2DF89 /* MainroomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainroomViewController.swift; sourceTree = "<group>"; };
+		80BEFD892AA40CBC00B2DF89 /* NewroomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewroomViewController.swift; sourceTree = "<group>"; };
+		80BEFD8B2AA40CEF00B2DF89 /* NewroomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewroomCollectionViewCell.swift; sourceTree = "<group>"; };
+		80BEFD8C2AA40CEF00B2DF89 /* NewroomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewroomCollectionViewCell.xib; sourceTree = "<group>"; };
+		80BEFD8F2AA40D6B00B2DF89 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		80BEFD912AA40D8D00B2DF89 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		80BEFD932AA40DB500B2DF89 /* UpdateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateAccountViewController.swift; sourceTree = "<group>"; };
+		80BEFD952AA40DE300B2DF89 /* UserDataStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataStoreViewController.swift; sourceTree = "<group>"; };
+		80BEFD972AA40E0A00B2DF89 /* GooglePlacesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesManager.swift; sourceTree = "<group>"; };
+		80BEFD992AA40E2700B2DF89 /* Roomdata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roomdata.swift; sourceTree = "<group>"; };
+		80BEFD9B2AA40E4000B2DF89 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		80BEFD9F2AA40E9A00B2DF89 /* CustomInfoWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInfoWindow.swift; sourceTree = "<group>"; };
+		80BEFDA32AA40F8800B2DF89 /* CustomInfoWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomInfoWindow.xib; sourceTree = "<group>"; };
+		80BEFE252AA4113600B2DF89 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		80BEFE272AA4115500B2DF89 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		80BEFE292AA4117500B2DF89 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		80CD494E2AA4290A00C14626 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A4EDA92B6771EC797B225209 /* Pods-PinPal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinPal.debug.xcconfig"; path = "Target Support Files/Pods-PinPal/Pods-PinPal.debug.xcconfig"; sourceTree = "<group>"; };
+		D6174A9B5884C488A441D957 /* Pods-PinPal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinPal.release.xcconfig"; path = "Target Support Files/Pods-PinPal/Pods-PinPal.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80BEFD632AA4094500B2DF89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEC4E6ED4109859EDA789502 /* Pods_PinPal.framework in Frameworks */,
+				80CD49402AA41E7600C14626 /* FirebaseFirestore in Frameworks */,
+				80CD49482AA41E7600C14626 /* FirebaseStorageCombine-Community in Frameworks */,
+				80CD493E2AA41E7600C14626 /* FirebaseAuthCombine-Community in Frameworks */,
+				80CD49422AA41E7600C14626 /* FirebaseFirestoreCombine-Community in Frameworks */,
+				80CD494D2AA423E800C14626 /* GoogleSignInSwift in Frameworks */,
+				80CD49462AA41E7600C14626 /* FirebaseStorage in Frameworks */,
+				80CD493C2AA41E7600C14626 /* FirebaseAuth in Frameworks */,
+				80CD49442AA41E7600C14626 /* FirebaseFirestoreSwift in Frameworks */,
+				80CD494B2AA423E800C14626 /* GoogleSignIn in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D38967FBDA99DF5723FFC4C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4EDA92B6771EC797B225209 /* Pods-PinPal.debug.xcconfig */,
+				D6174A9B5884C488A441D957 /* Pods-PinPal.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		80BEFD5D2AA4094500B2DF89 = {
+			isa = PBXGroup;
+			children = (
+				80BEFD682AA4094500B2DF89 /* PinPal */,
+				80BEFD672AA4094500B2DF89 /* Products */,
+				4D38967FBDA99DF5723FFC4C /* Pods */,
+				DEEC44CD4823BE33C1ACA6B4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		80BEFD672AA4094500B2DF89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80BEFD662AA4094500B2DF89 /* PinPal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80BEFD682AA4094500B2DF89 /* PinPal */ = {
+			isa = PBXGroup;
+			children = (
+				80BEFD692AA4094500B2DF89 /* AppDelegate.swift */,
+				80BEFD6B2AA4094500B2DF89 /* SceneDelegate.swift */,
+				80D321972AA87D4000091D51 /* Controller */,
+				80D321982AA87D8A00091D51 /* View */,
+				80D3219A2AA87DC000091D51 /* Model */,
+				80BEFD722AA4094700B2DF89 /* Assets.xcassets */,
+				80BEFD742AA4094700B2DF89 /* LaunchScreen.storyboard */,
+				80D321992AA87DB300091D51 /* Login */,
+				80BEFD772AA4094700B2DF89 /* Info.plist */,
+				80CD494E2AA4290A00C14626 /* GoogleService-Info.plist */,
+			);
+			path = PinPal;
+			sourceTree = "<group>";
+		};
+		80D321972AA87D4000091D51 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				80BEFD7D2AA40A4D00B2DF89 /* TopmenuViewController.swift */,
+				80BEFD872AA40C7C00B2DF89 /* MainroomViewController.swift */,
+				80BEFD892AA40CBC00B2DF89 /* NewroomViewController.swift */,
+				80BEFD8B2AA40CEF00B2DF89 /* NewroomCollectionViewCell.swift */,
+				80BEFD8F2AA40D6B00B2DF89 /* ResultViewController.swift */,
+				80BEFD932AA40DB500B2DF89 /* UpdateAccountViewController.swift */,
+				80BEFD912AA40D8D00B2DF89 /* SettingViewController.swift */,
+				80BEFD952AA40DE300B2DF89 /* UserDataStoreViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		80D321982AA87D8A00091D51 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80BEFD832AA40BCD00B2DF89 /* TopmenuCollectionViewCell.swift */,
+				80BEFD9F2AA40E9A00B2DF89 /* CustomInfoWindow.swift */,
+				80BEFD6F2AA4094500B2DF89 /* Main.storyboard */,
+				80BEFDA32AA40F8800B2DF89 /* CustomInfoWindow.xib */,
+				80BEFD842AA40BCD00B2DF89 /* TopmenuCollectionViewCell.xib */,
+				80BEFD8C2AA40CEF00B2DF89 /* NewroomCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		80D321992AA87DB300091D51 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				80BEFE272AA4115500B2DF89 /* LoginViewController.swift */,
+				80BEFE292AA4117500B2DF89 /* SignUpViewController.swift */,
+				80BEFE252AA4113600B2DF89 /* Login.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		80D3219A2AA87DC000091D51 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				80BEFD972AA40E0A00B2DF89 /* GooglePlacesManager.swift */,
+				80BEFD992AA40E2700B2DF89 /* Roomdata.swift */,
+				80BEFD9B2AA40E4000B2DF89 /* UserManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DEEC44CD4823BE33C1ACA6B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B55F295DA0C6A3988F89297 /* Pods_PinPal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80BEFD652AA4094500B2DF89 /* PinPal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80BEFD7A2AA4094700B2DF89 /* Build configuration list for PBXNativeTarget "PinPal" */;
+			buildPhases = (
+				0716F582E7CF77ABEF55EC44 /* [CP] Check Pods Manifest.lock */,
+				80BEFD622AA4094500B2DF89 /* Sources */,
+				80BEFD632AA4094500B2DF89 /* Frameworks */,
+				80BEFD642AA4094500B2DF89 /* Resources */,
+				ADBA2089C806A136C2DFFBF3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PinPal;
+			packageProductDependencies = (
+				80CD493B2AA41E7600C14626 /* FirebaseAuth */,
+				80CD493D2AA41E7600C14626 /* FirebaseAuthCombine-Community */,
+				80CD493F2AA41E7600C14626 /* FirebaseFirestore */,
+				80CD49412AA41E7600C14626 /* FirebaseFirestoreCombine-Community */,
+				80CD49432AA41E7600C14626 /* FirebaseFirestoreSwift */,
+				80CD49452AA41E7600C14626 /* FirebaseStorage */,
+				80CD49472AA41E7600C14626 /* FirebaseStorageCombine-Community */,
+				80CD494A2AA423E800C14626 /* GoogleSignIn */,
+				80CD494C2AA423E800C14626 /* GoogleSignInSwift */,
+			);
+			productName = PinPal;
+			productReference = 80BEFD662AA4094500B2DF89 /* PinPal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80BEFD5E2AA4094500B2DF89 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					80BEFD652AA4094500B2DF89 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 80BEFD612AA4094500B2DF89 /* Build configuration list for PBXProject "PinPal" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80BEFD5D2AA4094500B2DF89;
+			packageReferences = (
+				80CD493A2AA41E7600C14626 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				80CD49492AA423E800C14626 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			productRefGroup = 80BEFD672AA4094500B2DF89 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80BEFD652AA4094500B2DF89 /* PinPal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80BEFD642AA4094500B2DF89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80BEFD762AA4094700B2DF89 /* LaunchScreen.storyboard in Resources */,
+				80CD494F2AA4290B00C14626 /* GoogleService-Info.plist in Resources */,
+				80BEFD8E2AA40CEF00B2DF89 /* NewroomCollectionViewCell.xib in Resources */,
+				80BEFE262AA4113600B2DF89 /* Login.storyboard in Resources */,
+				80BEFDA42AA40F8800B2DF89 /* CustomInfoWindow.xib in Resources */,
+				80BEFD862AA40BCD00B2DF89 /* TopmenuCollectionViewCell.xib in Resources */,
+				80BEFD732AA4094700B2DF89 /* Assets.xcassets in Resources */,
+				80BEFD712AA4094500B2DF89 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0716F582E7CF77ABEF55EC44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PinPal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADBA2089C806A136C2DFFBF3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PinPal/Pods-PinPal-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PinPal/Pods-PinPal-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PinPal/Pods-PinPal-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80BEFD622AA4094500B2DF89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80BEFD982AA40E0A00B2DF89 /* GooglePlacesManager.swift in Sources */,
+				80BEFD6A2AA4094500B2DF89 /* AppDelegate.swift in Sources */,
+				80BEFD9C2AA40E4000B2DF89 /* UserManager.swift in Sources */,
+				80BEFD962AA40DE300B2DF89 /* UserDataStoreViewController.swift in Sources */,
+				80BEFD852AA40BCD00B2DF89 /* TopmenuCollectionViewCell.swift in Sources */,
+				80BEFE2A2AA4117500B2DF89 /* SignUpViewController.swift in Sources */,
+				80BEFD8A2AA40CBC00B2DF89 /* NewroomViewController.swift in Sources */,
+				80BEFD902AA40D6B00B2DF89 /* ResultViewController.swift in Sources */,
+				80BEFD882AA40C7C00B2DF89 /* MainroomViewController.swift in Sources */,
+				80BEFD922AA40D8D00B2DF89 /* SettingViewController.swift in Sources */,
+				80BEFD7E2AA40A4D00B2DF89 /* TopmenuViewController.swift in Sources */,
+				80BEFD8D2AA40CEF00B2DF89 /* NewroomCollectionViewCell.swift in Sources */,
+				80BEFD6C2AA4094500B2DF89 /* SceneDelegate.swift in Sources */,
+				80BEFE282AA4115500B2DF89 /* LoginViewController.swift in Sources */,
+				80BEFD942AA40DB500B2DF89 /* UpdateAccountViewController.swift in Sources */,
+				80BEFDA02AA40E9A00B2DF89 /* CustomInfoWindow.swift in Sources */,
+				80BEFD9A2AA40E2700B2DF89 /* Roomdata.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		80BEFD6F2AA4094500B2DF89 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80BEFD702AA4094500B2DF89 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		80BEFD742AA4094700B2DF89 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80BEFD752AA4094700B2DF89 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80BEFD782AA4094700B2DF89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		80BEFD792AA4094700B2DF89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80BEFD7B2AA4094700B2DF89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4EDA92B6771EC797B225209 /* Pods-PinPal.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 57KGRFU4Y3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PinPal/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.namekawa.yurie.PinPal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80BEFD7C2AA4094700B2DF89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6174A9B5884C488A441D957 /* Pods-PinPal.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 57KGRFU4Y3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PinPal/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.namekawa.yurie.PinPal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80BEFD612AA4094500B2DF89 /* Build configuration list for PBXProject "PinPal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80BEFD782AA4094700B2DF89 /* Debug */,
+				80BEFD792AA4094700B2DF89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80BEFD7A2AA4094700B2DF89 /* Build configuration list for PBXNativeTarget "PinPal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80BEFD7B2AA4094700B2DF89 /* Debug */,
+				80BEFD7C2AA4094700B2DF89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		80CD493A2AA41E7600C14626 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		80CD49492AA423E800C14626 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		80CD493B2AA41E7600C14626 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80CD493A2AA41E7600C14626 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		80CD493D2AA41E7600C14626 /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80CD493A2AA41E7600C14626 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		80CD493F2AA41E7600C14626 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80CD493A2AA41E7600C14626 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		80CD49412AA41E7600C14626 /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80CD493A2AA41E7600C14626 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		80CD49432AA41E7600C14626 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80CD493A2AA41E7600C14626 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		80CD49452AA41E7600C14626 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80CD493A2AA41E7600C14626 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		80CD49472AA41E7600C14626 /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80CD493A2AA41E7600C14626 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+		80CD494A2AA423E800C14626 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80CD49492AA423E800C14626 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		80CD494C2AA423E800C14626 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80CD49492AA423E800C14626 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 80BEFD5E2AA4094500B2DF89 /* Project object */;
+}

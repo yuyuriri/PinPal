@@ -1,0 +1,6 @@
+framework module Pods_PinPal {
+  umbrella header "Pods-PinPal-umbrella.h"
+
+  export *
+  module * { export * }
+}
